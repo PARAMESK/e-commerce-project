@@ -19,9 +19,9 @@ React Module.
 5. Folders and file structures. - Done.
 6. Components. - Done.
 6.1 NPM
-7. JSX.
+7. JSX.-Data Binding, Conditional Rendering.
 8. Virtual DOM
-9. Lifecycle hooks.
+9. Lifecycle hooks.-useState
 10. States.
 11. Props.
 12. Event handling.
