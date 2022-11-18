@@ -1,0 +1,20 @@
+To Dos For E-com application.
+
+Login Page.
+SignUp Page.
+Home Page.
+    => Header. - Done.
+    => Footer - HW.
+    => Show Product List. 
+    => SearchBar.
+
+Order.
+    => Cart
+    => Checkout
+
+WishList
+Product Page.
+    => Details, ratings.
+    => Reviews.
+About App.
+Profile.
