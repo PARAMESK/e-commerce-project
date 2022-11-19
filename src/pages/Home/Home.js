@@ -11,7 +11,19 @@ function Home() {
   // const [click, setClick] = useState(0);
   // const [click2, setClick2] = useState(100);
   // let data = "My Data";
+/*
+useEffect(() => {
+    fetch("Product.json")
+      // calling json function.
+      .then((res) => res.json())
+      // listening for json function to return.
+      .then((res) => {
+        setProducts(res);
+        console.log(product.length);
+      });
+  }, [click]);
 
+*/
   useEffect(() => {
     fetch("Product.json")
       // calling json function.
