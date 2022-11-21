@@ -8,7 +8,7 @@ function Home() {
   // whenever there is achange in products, it will force component refresh.
 
   const [products, setProducts] = useState([]);
-  // const [click, setClick] = useState(0);
+   const [click, setClick] = useState(0);
   // const [click2, setClick2] = useState(100);
   // let data = "My Data";
 /*
@@ -24,20 +24,31 @@ useEffect(() => {
   }, [click]);
 
 */
-  useEffect(() => {
-    fetch("Product.json")
-      // calling json function.
-      .then((res) => res.json())
-      // listening for json function to return.
-      .then((res) => {
-        setProducts(res);
-      });
-  }, []);
+useEffect(() => {
+  fetch("https://fakestoreapi.com/products")
+    // calling json function.
+    .then((res) => res.json())
+    // listening for json function to return.
+    .then((res) => {
+      console.log("fetching data");
+      res.forEach(o=>{
+        o.rating.rate=Math.ceil(Number(o.rating.rate));
+      })
+      console.log(res);
+      setProducts(res);
+    });
+}, [click]);
 
   return (
     <div>
       <Header />
       {/* Products */}
+      <button
+          onClick={() => {
+            setClick(click + 1);
+          }}>
+          Click
+        </button>
       <div>
         {/* <h1>{click}</h1>
         <h1>{click2}</h1>

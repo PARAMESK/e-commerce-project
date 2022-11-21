@@ -24,6 +24,7 @@ React Module.
 9. Lifecycle hooks.-useState
 10. States.
 11. Props.
+12.API
 12. Event handling.
 13. Data passing.
 14. Event Passing.
@@ -76,3 +77,7 @@ State =>
 3. Allows data to survive.
 
 Destroy,
+
+
+API: Interface
+=> Application Programming Interface
