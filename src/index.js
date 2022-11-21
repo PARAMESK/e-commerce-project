@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Home from './pages/Home/Home';
+import Cartpage from './pages/Cartpage/Cartpage'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap';
 import reportWebVitals from './reportWebVitals';
@@ -10,7 +11,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   //<React.StrictMode>
     //<App />
-    <Home />
+    //<Home />
+    <Cartpage />
  // </React.StrictMode>
 );
 

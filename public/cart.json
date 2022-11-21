@@ -1,7 +1,62 @@
+
 [
     {
-        "productImage":"",
-        "productName":"",
-        "quantity":20
+        "Productname":"iPhone 14",
+        "Productprice":"95000",
+        "Productdetail":"Created By Apple",
+        "Productimg":"https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+    },
+    {
+        "Productname":"MI Power Bank Hypersonic",
+        "Productprice":"4000",
+        "Productdetail":"20000mAh 50W Lithium Polymer Supports Laptop Charging 50W Mobile Charging | Power Delivery 3.0 Fast Charging | Triple Output Port",
+        "Productimg":"https://i.dummyjson.com/data/products/4/2.jpg"
+    }
+    ,
+    {
+        "Productname":"Vibez",
+        "Productprice":"450",
+        "Productdetail":"Vibez by Lifelong Gaming Earphones with External Mic| In-Ear Gaming Wired Headphones| Gaming Headset|Gaming Earphone with Detachable Microphone for PC, PS4, Mobiles, Tablets (VBGE01 Quest ,1 Year Warranty, Black)",
+        "Productimg":"https://i.dummyjson.com/data/products/5/3.jpg"
+    },
+
+    {
+        "Productname":"Canon EOS 200D",
+        "Productprice":"56000",
+        "Productdetail":"24.1MP Digital SLR Camera + EF-S 18-55mm f4 is STM Lens (Black)",
+        "Productimg":"https://i.dummyjson.com/data/products/10/2.jpg"
+    },
+
+    {
+        "Productname":"TP-link N300 WiFi Wireless Router",
+        "Productprice":"619",
+        "Productdetail":"TL-WR845N | 300Mbps Wi-Fi Speed | Three 5dBi high gain Antennas | IPv6 Compatible | AP/RE/WISP Mode | Parental Control | Guest Network",
+        "Productimg":"https://i.dummyjson.com/data/products/17/2.jpg"
+    },
+
+    {
+        "Productname":"2021 Apple 10.2-inch (25.91 cm) iPad",
+        "Productprice":"30000",
+        "Productdetail":"with A13 Bionic chip (Wi-Fi, 64GB) - Space Grey (9th Generation)",
+        "Productimg":"https://i.dummyjson.com/data/products/23/2.jpg"
+    },
+
+    {
+        "Productname":"2022 Apple TV ",
+        "Productprice":"50000",
+        "Productdetail":"4K Wi‑Fi with 64GB Storage (3rd Generation)",
+        "Productimg":"https://m.media-amazon.com/Productimgs/I/616bgkA2J0L._SX679_.jpg"
+    },
+    {
+        "Productname":"Amazon Basics 20000mAh",
+        "Productdetail":"Amazon Basics 20000mAh Lithium Polymer 18W Fast Charging Power Bank | Triple Output (Type C, 2 USB) and Dual Input (Type C, Micro USB) Ports | Metallic Body, Black",
+        "Productprice":"1439",
+        "Productimg":"https://m.media-amazon.com/Productimgs/I/6195mjIuczL._SL1500_.jpg"
+    },
+    {
+        "Productname":"Atomic Habits",
+        "Productdetail":"The life-changing million copy bestseller",
+        "Productprice":"414",
+        "Productimg":"https://m.media-amazon.com/Productimgs/I/51-nXsSRfZL._SX328_BO1,204,203,200_.jpg"
     }
 ]

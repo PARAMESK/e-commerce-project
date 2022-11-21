@@ -1,0 +1,22 @@
+
+.cartdiv{
+    margin:25px 25px;
+    border:1px solid grey;
+    border-radius: 25px;
+}
+img{
+    width: 200px;
+    height:200px;
+    padding:25px;
+}
+.productdesc{
+    padding:25px;
+    text-align: center;
+}
+.price{
+    font-weight: 300;
+}
+.quantity{
+    padding:25px;
+    text-align: center;
+}
