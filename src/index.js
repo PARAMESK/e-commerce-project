@@ -7,12 +7,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap';
 import reportWebVitals from './reportWebVitals';
 
+import Register from './pages/Register/Register';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   //<React.StrictMode>
     //<App />
-    <Home />
+   // <Home />
     //<Cartpage />
+    <Register />
  // </React.StrictMode>
 );
 
