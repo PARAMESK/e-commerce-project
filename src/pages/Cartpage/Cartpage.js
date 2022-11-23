@@ -1,42 +1,29 @@
 import { useEffect, useState } from "react";
-//import ProductCard from "../../components/Home/ProductCard/ProductCard";
-import Addcart from "../../components/Cartpage/Addcart";
-import Footer from "../../components/Shared/Footer/Footer";
+
 import Header from "../../components/Shared/Header/Header";
+import CartItem from "../../components/Cart/CartItem/CartItem";
 
-function Cartpage() {
-  const [carts, setCart] = useState([]);
-  useEffect(() => {
-    fetch("Cart.json")
-      // calling json function.
-      .then((res) => res.json())
-      // listening for json function to return.
-      .then((res) => {
-        setCart(res);
-      });
-    }, []);
-  return (
-    <div>
-      <Header />
-      
-        
-    <h2 className="heading">Add to cart Details</h2>
+function Cartpage(){
+    const [cartItems, setCartItem] = useState([]);
 
-      <div>
-      <div className="row">
-          {carts.map((Cart, i) => (
-            <div className="col-12">
-              <Addcart item={Cart} index={i} />
-              <h1 id="header1"></h1>
-            </div>
-          ))}
+   useEffect(() => {
+       fetch("product.json")
+       .then(res => res.json())
+       .then(res => setCartItem(res))
+   })
+
+    return(
+        <div>
+        <Header/>
+        <div>
+            {
+            cartItems.map((item,index) => (
+                <CartItem key={index} item={item} index={index}/>
+            ))
+            }
         </div>
-      <Addcart />
-      </div>
-    
-      <Footer />
-    </div>
-  );
+        </div>
+    );
 }
 
 export default Cartpage;

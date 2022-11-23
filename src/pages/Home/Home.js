@@ -30,11 +30,11 @@ useEffect(() => {
     .then((res) => res.json())
     // listening for json function to return.
     .then((res) => {
-      console.log("fetching data");
+     // console.log("fetching data");
       res.forEach(o=>{
         o.rating.rate=Math.ceil(Number(o.rating.rate));
       })
-      console.log(res);
+     // console.log(res);
       setProducts(res);
     });
 }, [click]);
