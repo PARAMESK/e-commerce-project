@@ -8,6 +8,7 @@ import 'bootstrap/dist/js/bootstrap';
 import reportWebVitals from './reportWebVitals';
 
 import Register from './pages/Register/Register';
+import Signin from './pages/Signin/Signin';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,6 +18,7 @@ root.render(
   <Routes>
   <Route path='/' element={<Home />}></Route>
   <Route path='/register' element={<Register />}></Route>
+  <Route path='/signin' element={<Signin />}></Route>
 </Routes>
 </BrowserRouter>
     //<App />

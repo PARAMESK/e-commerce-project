@@ -70,8 +70,8 @@ useEffect(() => {
         {/* Products */}
         <div className="row">
           {products.map((product, i) => (
-            <div className="col-3">
-              <ProductCard item={product} index={i} />
+            <div key={product.id} className="col-3">
+              <ProductCard key={product.id} item={product} index={i} />
               <h1 id="header1"></h1>
             </div>
           ))}

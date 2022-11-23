@@ -1,13 +1,19 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Register.css";
 
 function Register() {
   const [user, setUser] = useState({});
 
+  const navigate = useNavigate();
+
   function handleFormSubmit(event) {
-    console.log(user);
-    console.log(user.name);
-    console.log(user.address);
+    // console.log(JSON.stringify(user));
+    // redirect to login.
+    navigate("/login");
+   // console.log(user);
+   // console.log(user.name);
+   // console.log(user.address);
   }
 
   return (
@@ -151,8 +157,9 @@ function Register() {
           </div>
         </div>
         <button type="submit" className="float-end btn btn-success">
-          Register
+         <a href="Signin" className="registerlink">Register</a> 
         </button>
+       
       </form>
     </div>
   );
