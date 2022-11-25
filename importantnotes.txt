@@ -1,0 +1,5 @@
+
+npx create-react-app myapp
+cd myapp
+npm start
+states: contains data about the component
