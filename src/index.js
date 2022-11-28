@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Home from './pages/Home/Home';
-import Cartpage from './pages/Cartpage/Cartpage'
+import Cart from './pages/Cart/Cart'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap';
 import reportWebVitals from './reportWebVitals';
@@ -19,7 +19,7 @@ root.render(
   <Route path='/' element={<Home />}></Route>
   <Route path='/register' element={<Register />}></Route>
   <Route path='/signin' element={<Signin />}></Route>
-  <Route path='/cart' element={<Cartpage />}></Route>
+  <Route path='/cart' element={<Cart />}></Route>
 </Routes>
 </BrowserRouter>
     //<App />

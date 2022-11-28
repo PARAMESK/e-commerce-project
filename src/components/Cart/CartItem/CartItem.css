@@ -33,8 +33,7 @@
 .container-2
 {
     display: flex;
-  justify-content: flex-end;
-      /* autoprefixer:end; */
+    justify-content: flex-end;
     width: 50%;
 }
 
@@ -47,12 +46,6 @@
      border-radius: 10px;
 }
 
-span
-{
-  margin: auto;
-  width: 15px;
-  text-align: center;
-}
 
 .btn-group
 {
@@ -69,15 +62,3 @@ span
     border-radius: 10px;
 }
 
-.bi-trash{
-    fill: black;
-}
-.remove-item{
-    position: relative;
-    top:25px;
-    left:40px;
-}
-.delbutton{   
-     border: none;
-    background: transparent;
-}
