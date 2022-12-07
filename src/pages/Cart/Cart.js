@@ -1,55 +1,40 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
+import AppContext from "../../context";
 
 import Header from "../../components/Shared/Header/Header";
 import CartItem from "../../components/Cart/CartItem/CartItem";
 import "./Cart.css";
 
 function Cart() {
-  const [cartItems, setCartItem] = useState([]);
-  const [totalPrice, setTotalPrice] = useState(0);
+  const { cartItems } = useContext(AppContext);
+  console.log(cartItems);
 
-  useEffect(() => {
-    fetch("product.json")
-      .then((res) => res.json())
-      .then((res) => {
-        updateTotalPrice(res);
-        setCartItem(res);
-      });
-  }, []);
-
-  // Step 3: takes new quantity and update cart items.
-  function updatePrice(item, newQuantity) {
-    let items = cartItems;
-    let cartItemIndex = items.findIndex((i) => i.name === item.name);
-    items[cartItemIndex].qty = newQuantity;
-    setCartItem(items);
-    updateTotalPrice(items);
-  }
-
-  // 1. Update Total Price = sum of price*quantity for each cart items.
-  function updateTotalPrice(res) {
-    let sum = 0;
-    for (let i = 0; i < res.length; i++) {
-      sum = sum + Number(res[i].price) * Number(res[i].qty);
-    }
-    setTotalPrice(sum);
-  }
+  let totalPrice = 0;
+  totalPrice = cartItems.reduce((prev, curr) => {
+    return Math.ceil(prev + (curr.price*curr.qty));
+  }, 0);
+  console.log(totalPrice);
 
   return (
-    <div className="cart-container">
-      <Header />
-      {/* 2. Print updated total price */}
-      <h4 className="totalPrice">Total Price: {totalPrice}</h4>
-      <div>
-        {cartItems.map((item, index) => (
-          <CartItem
-            // 4. Pass function as props.
-            updatePrice={updatePrice}
-            key={index}
-            item={item}
-            index={index}
-          />
-        ))}
+    <div>
+      <div className="cart-header">
+        <Header />
+      </div>
+
+      <div className="cart-container">
+        {/* 2. Print updated total price */}
+        <h4 className="totalPrice">Total Price: {totalPrice}</h4>
+        <div>
+          {cartItems.map((item, index) => (
+            <CartItem
+              // 4. Pass function as props.
+
+              key={index}
+              item={item}
+              index={index}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

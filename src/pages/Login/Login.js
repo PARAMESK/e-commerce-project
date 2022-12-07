@@ -1,10 +1,10 @@
-import "./Signin.css";
+import "./Login.css";
 
-function Signin() {
+function Login() {
   function handleLogin() {}
 
   return (
-    <div className="container">
+    <div className="login-container">
       <h3>Please login.</h3>
       <form onSubmit={handleLogin} className="login-form" action="">
         <div className="mb-3">
@@ -28,4 +28,4 @@ function Signin() {
   );
 }
 
-export default Signin;
+export default Login;
